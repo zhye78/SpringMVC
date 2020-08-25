@@ -15,10 +15,13 @@
 
 	<http auto-config="true" use-expressions="true">
 		<intercept-url pattern="/" access="permitAll" />
+		<intercept-url pattern="/login" access="permitAll" />
 		<intercept-url pattern="/offers" access="permitAll" />
-		<intercept-url pattern="/createOffer" access="isAuthenticated()" />
+		<intercept-url pattern="/createOffer" access="hasRole('ROLE_USER')" />
 		<intercept-url pattern="/resources/**" access="permitAll" />
 		<intercept-url pattern="/**" access="denyAll" />
+		
+		<form-login login-page="/login" authentication-failure-url="/login?error" />
 	</http>
 
 </b:beans>
