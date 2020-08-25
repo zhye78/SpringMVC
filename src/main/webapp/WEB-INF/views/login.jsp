@@ -20,6 +20,10 @@
 		<form class="form-signin" method="post" action="<c:url value="/login"/>">
 			<h2 class="form-signin-heading">Please sign in</h2>
 			
+			<c:if test="${not empty logoutMsg }">
+				<div style="color:#0000ff"><h4>${logoutMsg }</h4></div>
+			</c:if>
+			
 			<c:if test="${not empty errorMsg }">
 				<div style="color:#ff0000"><h4>${errorMsg }</h4></div>
 			</c:if>

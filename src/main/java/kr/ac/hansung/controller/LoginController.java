@@ -9,10 +9,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class LoginController {
 	
 	@RequestMapping("/login")
-	public String showLogin(@RequestParam(value="error", required=false) String error, Model model) {
+	public String showLogin(@RequestParam(value="error", required=false) String error,
+							@RequestParam(value="logout", required=false) String logout,
+							Model model) {
 		
 		if(error != null) {
 			model.addAttribute("errorMsg", "Invalid username and password");
+		}
+		if(logout != null) {
+			model.addAttribute("logoutMsg", "Logout Successfully");
 		}
 		
 		return "login";
