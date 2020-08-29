@@ -28,7 +28,7 @@ textarea{
 	height: 100px;
 }
 
-input[type=text]{
+/* input[type=text]{
 	width: 300px;
 }
 
@@ -40,4 +40,4 @@ input[type=submit]{
 
 input[type=submit]:hover{
 	background-color: white;
-}
+} */

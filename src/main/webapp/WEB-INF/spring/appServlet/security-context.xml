@@ -19,6 +19,7 @@
 		<intercept-url pattern="/logout" access="permitAll" />
 		<intercept-url pattern="/offers" access="permitAll" />
 		<intercept-url pattern="/createOffer" access="hasRole('ROLE_USER')" />
+		<intercept-url pattern="/doCreate" access="permitAll" />
 		<intercept-url pattern="/resources/**" access="permitAll" />
 		<intercept-url pattern="/**" access="denyAll" />
 		
