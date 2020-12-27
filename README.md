@@ -1,5 +1,12 @@
 # SpringMVC
-Spring MVC + Data Binding + Data Validation
+Spring MVC + Data Binding + Data Validation 을 사용하여 Offer 관리 폼 만들기
+
+### 구현 기능
+1. 로그인
+2. 로그아웃
+3. 전체 Offers 조회
+4. 새 Offer 추가
+5. Offer 추가시 validateion 기능 사용하여 유효한 값만 입력 가능하도록 함
 
 ### 실행 화면
 
@@ -18,6 +25,9 @@ Spring MVC + Data Binding + Data Validation
 - Add Offer
 
 ![springadd](https://user-images.githubusercontent.com/38847724/103168437-9a7a9e00-4876-11eb-8463-4c35f9013cb9.PNG)
+
+- Add Offer Failed
+
 
 - Add Offer Success
 
