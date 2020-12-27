@@ -28,6 +28,7 @@ Spring MVC + Data Binding + Data Validation 을 사용하여 Offer 관리 폼 �
 
 - Add Offer Failed
 
+![springaddfail](https://user-images.githubusercontent.com/38847724/103168553-753a5f80-4877-11eb-82da-143023da04f0.PNG)
 
 - Add Offer Success
 
